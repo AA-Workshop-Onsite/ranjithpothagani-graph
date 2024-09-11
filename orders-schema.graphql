@@ -49,8 +49,3 @@ type User @key(fields: "id") {
 type ProductVariant @key(fields: "id", resolvable: false) {
   id: ID!
 }
-
-extend schema
-@link(url: "https://specs.apollo.dev/federation/v2.5", import: ["@key",
-  "@authenticated"])
-
